@@ -33,9 +33,9 @@ public class IconManager {
         System.out.println("com.sfc.sf2.icon.IconManager.importDisassembly() - Disassembly imported.");
     }
     
-    public void exportDisassembly(String paletteFilePath, String graphicsFilePath){
+    public void exportDisassembly(String graphicsFilePath){
         System.out.println("com.sfc.sf2.icon.IconManager.importDisassembly() - Exporting disassembly ...");
-        graphicsManager.exportDisassembly(paletteFilePath, graphicsFilePath, false);
+        graphicsManager.exportDisassembly(graphicsFilePath, false);
         System.out.println("com.sfc.sf2.icon.IconManager.importDisassembly() - Disassembly exported.");        
     }   
     
@@ -46,9 +46,9 @@ public class IconManager {
         System.out.println("com.sfc.sf2.icon.IconManager.importOriginalRom() - Original ROM imported.");
     }
     
-    public void exportRom(String originalRomFilePath, String paletteOffset, String paletteLength, String graphicsOffset, String graphicsLength){
+    public void exportRom(String originalRomFilePath, String graphicsOffset, String graphicsLength){
         System.out.println("com.sfc.sf2.icon.IconManager.exportOriginalRom() - Exporting original ROM ...");
-        graphicsManager.exportRom(originalRomFilePath, paletteOffset, paletteLength, graphicsOffset, graphicsLength, false);
+        graphicsManager.exportRom(originalRomFilePath, graphicsOffset, graphicsLength, false);
         System.out.println("com.sfc.sf2.icon.IconManager.exportOriginalRom() - Original ROM exported.");        
     }      
     
