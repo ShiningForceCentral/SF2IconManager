@@ -114,8 +114,6 @@ public class MainEditor extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         jTextField26 = new javax.swing.JTextField();
-        jLabel27 = new javax.swing.JLabel();
-        jTextField27 = new javax.swing.JTextField();
         jPanel14 = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
         jTextField15 = new javax.swing.JTextField();
@@ -201,7 +199,7 @@ public class MainEditor extends javax.swing.JFrame {
 
         jLabel8.setText("Palette file :");
 
-        jTextField8.setText("E:\\SEGADEV\\GITHUB\\SF2DISASM\\disasm\\data\\graphics\\tech\\displayinitpalette.bin");
+        jTextField8.setText("..\\tech\\displayinitpalette.bin");
         jTextField8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField8ActionPerformed(evt);
@@ -224,7 +222,7 @@ public class MainEditor extends javax.swing.JFrame {
 
         jLabel2.setText("<html>Select disassembly files.");
 
-        jTextField9.setText("E:\\SEGADEV\\GITHUB\\SF2DISASM\\disasm\\data\\graphics\\icons\\icons.bin");
+        jTextField9.setText(".\\icons.bin");
         jTextField9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField9ActionPerformed(evt);
@@ -488,7 +486,7 @@ public class MainEditor extends javax.swing.JFrame {
                 jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 403, Short.MAX_VALUE)
+                    .addComponent(jTabbedPane1)
                     .addContainerGap())
             );
             jPanel3Layout.setVerticalGroup(
@@ -510,7 +508,7 @@ public class MainEditor extends javax.swing.JFrame {
 
             jLabel14.setText("Icons file :");
 
-            jTextField13.setText("E:\\SEGADEV\\GITHUB\\SF2DISASM\\disasm\\data\\graphics\\icons\\icons.bin");
+            jTextField13.setText(".\\icons.bin");
             jTextField13.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
                     jTextField13ActionPerformed(evt);
@@ -593,15 +591,6 @@ public class MainEditor extends javax.swing.JFrame {
                 }
             });
 
-            jLabel27.setText("Length in bytes : ");
-
-            jTextField27.setText("31296");
-            jTextField27.addActionListener(new java.awt.event.ActionListener() {
-                public void actionPerformed(java.awt.event.ActionEvent evt) {
-                    jTextField27ActionPerformed(evt);
-                }
-            });
-
             javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
             jPanel12.setLayout(jPanel12Layout);
             jPanel12Layout.setHorizontalGroup(
@@ -616,16 +605,12 @@ public class MainEditor extends javax.swing.JFrame {
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jButton28))
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
-                            .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
+                            .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel12Layout.createSequentialGroup()
                                     .addComponent(jLabel26)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel27)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jButton26)))
                     .addContainerGap())
@@ -643,12 +628,9 @@ public class MainEditor extends javax.swing.JFrame {
                         .addGroup(jPanel12Layout.createSequentialGroup()
                             .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel26)
-                                    .addComponent(jLabel27))
-                                .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel26))))
                     .addContainerGap(37, Short.MAX_VALUE))
             );
 
@@ -721,7 +703,7 @@ public class MainEditor extends javax.swing.JFrame {
                     jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jTabbedPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 403, Short.MAX_VALUE)
+                        .addComponent(jTabbedPane2)
                         .addContainerGap())
                 );
                 jPanel5Layout.setVerticalGroup(
@@ -819,7 +801,7 @@ public class MainEditor extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
-        iconManager.exportRom(jTextField18.getText(),jTextField26.getText(),jTextField27.getText());
+        iconManager.exportRom(jTextField18.getText(),jTextField26.getText());
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
@@ -944,10 +926,6 @@ public class MainEditor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField26ActionPerformed
 
-    private void jTextField27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField27ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField27ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -1018,7 +996,6 @@ public class MainEditor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
@@ -1056,7 +1033,6 @@ public class MainEditor extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField22;
     private javax.swing.JTextField jTextField23;
     private javax.swing.JTextField jTextField26;
-    private javax.swing.JTextField jTextField27;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables

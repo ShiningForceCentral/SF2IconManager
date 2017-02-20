@@ -46,9 +46,9 @@ public class IconManager {
         System.out.println("com.sfc.sf2.icon.IconManager.importOriginalRom() - Original ROM imported.");
     }
     
-    public void exportRom(String originalRomFilePath, String graphicsOffset, String graphicsLength){
+    public void exportRom(String originalRomFilePath, String graphicsOffset){
         System.out.println("com.sfc.sf2.icon.IconManager.exportOriginalRom() - Exporting original ROM ...");
-        graphicsManager.exportRom(originalRomFilePath, graphicsOffset, graphicsLength, false);
+        graphicsManager.exportRom(originalRomFilePath, graphicsOffset, false);
         System.out.println("com.sfc.sf2.icon.IconManager.exportOriginalRom() - Original ROM exported.");        
     }      
     
