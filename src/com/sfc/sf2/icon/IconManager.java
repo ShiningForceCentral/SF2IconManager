@@ -8,6 +8,7 @@ package com.sfc.sf2.icon;
 import com.sfc.sf2.graphics.GraphicsManager;
 import com.sfc.sf2.graphics.Tile;
 import com.sfc.sf2.icon.io.PngManager;
+import com.sfc.sf2.icon.io.GifManager;
 
 /**
  *
@@ -28,27 +29,27 @@ public class IconManager {
        
     public void importDisassembly(String paletteFilePath, String graphicsFilePath){
         System.out.println("com.sfc.sf2.icon.IconManager.importDisassembly() - Importing disassembly ...");
-        graphicsManager.importDisassembly(paletteFilePath, graphicsFilePath,false);
+        graphicsManager.importDisassembly(paletteFilePath, graphicsFilePath,GraphicsManager.COMPRESSION_NONE);
         tiles = graphicsManager.getTiles();
         System.out.println("com.sfc.sf2.icon.IconManager.importDisassembly() - Disassembly imported.");
     }
     
     public void exportDisassembly(String graphicsFilePath){
         System.out.println("com.sfc.sf2.icon.IconManager.importDisassembly() - Exporting disassembly ...");
-        graphicsManager.exportDisassembly(graphicsFilePath, false);
+        graphicsManager.exportDisassembly(graphicsFilePath, GraphicsManager.COMPRESSION_NONE);
         System.out.println("com.sfc.sf2.icon.IconManager.importDisassembly() - Disassembly exported.");        
     }   
     
     public void importRom(String romFilePath, String paletteOffset, String paletteLength, String graphicsOffset, String graphicsLength){
         System.out.println("com.sfc.sf2.icon.IconManager.importOriginalRom() - Importing original ROM ...");
-        graphicsManager.importRom(romFilePath, paletteOffset, paletteLength, graphicsOffset, graphicsLength,false);
+        graphicsManager.importRom(romFilePath, paletteOffset, paletteLength, graphicsOffset, graphicsLength,GraphicsManager.COMPRESSION_NONE);
         tiles = graphicsManager.getTiles();
         System.out.println("com.sfc.sf2.icon.IconManager.importOriginalRom() - Original ROM imported.");
     }
     
     public void exportRom(String originalRomFilePath, String graphicsOffset){
         System.out.println("com.sfc.sf2.icon.IconManager.exportOriginalRom() - Exporting original ROM ...");
-        graphicsManager.exportRom(originalRomFilePath, graphicsOffset, false);
+        graphicsManager.exportRom(originalRomFilePath, graphicsOffset, GraphicsManager.COMPRESSION_NONE);
         System.out.println("com.sfc.sf2.icon.IconManager.exportOriginalRom() - Original ROM exported.");        
     }      
     
@@ -63,5 +64,18 @@ public class IconManager {
         System.out.println("com.sfc.sf2.icon.IconManager.exportPng() - Exporting PNG ...");
         PngManager.exportPng(tiles, basepath);
         System.out.println("com.sfc.sf2.icon.IconManager.exportPng() - PNG exported.");       
+    }    
+    
+    public void importGif(String basepath){
+        System.out.println("com.sfc.sf2.icon.IconManager.importGif() - Importing GIF ...");
+        tiles = GifManager.importGif(basepath);
+        graphicsManager.setTiles(tiles);
+        System.out.println("com.sfc.sf2.icon.IconManager.importGif() - GIF imported.");
+    }
+    
+    public void exportGif(String basepath){
+        System.out.println("com.sfc.sf2.icon.IconManager.exportGif() - Exporting GIF ...");
+        GifManager.exportGif(tiles, basepath);
+        System.out.println("com.sfc.sf2.icon.IconManager.exportGif() - GIF exported.");       
     }
 }
