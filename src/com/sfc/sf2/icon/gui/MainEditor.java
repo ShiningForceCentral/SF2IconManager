@@ -211,7 +211,7 @@ public class MainEditor extends javax.swing.JFrame {
 
         jLabel8.setText("Palette file :");
 
-        jTextField8.setText("..\\tech\\displayinitpalette.bin");
+        jTextField8.setText("..\\tech\\basepalette.bin");
         jTextField8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField8ActionPerformed(evt);
@@ -298,7 +298,7 @@ public class MainEditor extends javax.swing.JFrame {
 
         jLabel16.setText("Original ROM :");
 
-        jTextField16.setText(".\\sf2.bin");
+        jTextField16.setText("..\\..\\..\\..\\rom\\sf2.bin");
         jTextField16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField16ActionPerformed(evt);
@@ -632,7 +632,7 @@ public class MainEditor extends javax.swing.JFrame {
 
                 jLabel18.setText("Original ROM :");
 
-                jTextField18.setText(".\\sf2.bin");
+                jTextField18.setText("..\\..\\..\\..\\build\\sf2build.bin");
                 jTextField18.addActionListener(new java.awt.event.ActionListener() {
                     public void actionPerformed(java.awt.event.ActionEvent evt) {
                         jTextField18ActionPerformed(evt);

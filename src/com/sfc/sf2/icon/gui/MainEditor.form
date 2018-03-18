@@ -342,7 +342,7 @@
                                     </Component>
                                     <Component class="javax.swing.JTextField" name="jTextField8">
                                       <Properties>
-                                        <Property name="text" type="java.lang.String" value="..\u005ctech\u005cdisplayinitpalette.bin" containsInvalidXMLChars="true"/>
+                                        <Property name="text" type="java.lang.String" value="..\u005ctech\u005cbasepalette.bin" containsInvalidXMLChars="true"/>
                                       </Properties>
                                       <Events>
                                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField8ActionPerformed"/>
@@ -502,7 +502,7 @@
                                     </Component>
                                     <Component class="javax.swing.JTextField" name="jTextField16">
                                       <Properties>
-                                        <Property name="text" type="java.lang.String" value=".\u005csf2.bin" containsInvalidXMLChars="true"/>
+                                        <Property name="text" type="java.lang.String" value="..\u005c..\u005c..\u005c..\u005crom\u005csf2.bin" containsInvalidXMLChars="true"/>
                                       </Properties>
                                       <Events>
                                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField16ActionPerformed"/>
@@ -955,7 +955,7 @@
                                     </Component>
                                     <Component class="javax.swing.JTextField" name="jTextField18">
                                       <Properties>
-                                        <Property name="text" type="java.lang.String" value=".\u005csf2.bin" containsInvalidXMLChars="true"/>
+                                        <Property name="text" type="java.lang.String" value="..\u005c..\u005c..\u005c..\u005cbuild\u005csf2build.bin" containsInvalidXMLChars="true"/>
                                       </Properties>
                                       <Events>
                                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField18ActionPerformed"/>
