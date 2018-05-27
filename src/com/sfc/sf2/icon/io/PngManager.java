@@ -33,9 +33,10 @@ public class PngManager {
     
     public static Tile[] importPng(String basepath){
         System.out.println("com.sfc.sf2.icon.io.PngManager.importPng() - Importing PNG files ...");
+        int count = new File(basepath).list().length;
         List<Tile[]> icons = new ArrayList();
         try{
-            for(int i=0;i<256;i++){
+            for(int i=0;i<count;i++){
                 String index = String.format("%03d", i);
                 String filePath = basepath + CHARACTER_FILENAME.replace("XXX.png", index+".png");
                 System.out.println("Parsing " + filePath);
