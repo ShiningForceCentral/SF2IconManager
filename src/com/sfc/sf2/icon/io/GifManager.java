@@ -33,9 +33,10 @@ public class GifManager {
     
     public static Tile[] importGif(String basepath){
         System.out.println("com.sfc.sf2.icon.io.GifManager.importGif() - Importing GIF files ...");
+        int count = new File(basepath).list().length;
         List<Tile[]> icons = new ArrayList();
         try{
-            for(int i=0;i<256;i++){
+            for(int i=0;i<count;i++){
                 String index = String.format("%03d", i);
                 String filePath = basepath + CHARACTER_FILENAME.replace("XXX.gif", index+".gif");
                 System.out.println("Parsing " + filePath);
