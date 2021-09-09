@@ -7,6 +7,7 @@ package com.sfc.sf2.icon;
 
 import com.sfc.sf2.graphics.GraphicsManager;
 import com.sfc.sf2.graphics.Tile;
+import com.sfc.sf2.icon.io.DisassemblyManager;
 import com.sfc.sf2.icon.io.PngManager;
 import com.sfc.sf2.icon.io.GifManager;
 
@@ -27,16 +28,16 @@ public class IconManager {
         this.tiles = tiles;
     }
        
-    public void importDisassembly(String paletteFilePath, String graphicsFilePath){
+    public void importDisassembly(String paletteFilePath, String basepath){
         System.out.println("com.sfc.sf2.icon.IconManager.importDisassembly() - Importing disassembly ...");
-        graphicsManager.importDisassembly(paletteFilePath, graphicsFilePath,GraphicsManager.COMPRESSION_NONE);
-        tiles = graphicsManager.getTiles();
+        tiles = DisassemblyManager.importDisassembly(paletteFilePath, basepath);
+        graphicsManager.setTiles(tiles);
         System.out.println("com.sfc.sf2.icon.IconManager.importDisassembly() - Disassembly imported.");
     }
     
-    public void exportDisassembly(String graphicsFilePath){
+    public void exportDisassembly(String basepath){
         System.out.println("com.sfc.sf2.icon.IconManager.importDisassembly() - Exporting disassembly ...");
-        graphicsManager.exportDisassembly(graphicsFilePath, GraphicsManager.COMPRESSION_NONE);
+        DisassemblyManager.exportDisassembly(tiles, basepath);
         System.out.println("com.sfc.sf2.icon.IconManager.importDisassembly() - Disassembly exported.");        
     }   
     

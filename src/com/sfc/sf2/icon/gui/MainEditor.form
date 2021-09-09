@@ -296,7 +296,7 @@
                                                   <Group type="102" alignment="1" attributes="0">
                                                       <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="jTextField9" pref="257" max="32767" attributes="0"/>
+                                                      <Component id="jTextField9" pref="259" max="32767" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="jButton15" min="-2" max="-2" attributes="0"/>
                                                   </Group>
@@ -366,12 +366,12 @@
                                     </Component>
                                     <Component class="javax.swing.JLabel" name="jLabel2">
                                       <Properties>
-                                        <Property name="text" type="java.lang.String" value="&lt;html&gt;Select disassembly files."/>
+                                        <Property name="text" type="java.lang.String" value="&lt;html&gt;Select a directory with &quot;iconXXX.bin&quot; files."/>
                                       </Properties>
                                     </Component>
                                     <Component class="javax.swing.JTextField" name="jTextField9">
                                       <Properties>
-                                        <Property name="text" type="java.lang.String" value=".\u005cicons.bin" containsInvalidXMLChars="true"/>
+                                        <Property name="text" type="java.lang.String" value=".\u005c" containsInvalidXMLChars="true"/>
                                       </Properties>
                                       <Events>
                                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField9ActionPerformed"/>
@@ -379,7 +379,7 @@
                                     </Component>
                                     <Component class="javax.swing.JLabel" name="jLabel10">
                                       <Properties>
-                                        <Property name="text" type="java.lang.String" value="Icons file :"/>
+                                        <Property name="text" type="java.lang.String" value="Icons dir :"/>
                                       </Properties>
                                     </Component>
                                     <Component class="javax.swing.JButton" name="jButton15">
@@ -601,7 +601,7 @@
                                                   <Group type="102" alignment="0" attributes="0">
                                                       <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="jTextField11" pref="261" max="32767" attributes="0"/>
+                                                      <Component id="jTextField11" pref="265" max="32767" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="jButton17" min="-2" max="-2" attributes="0"/>
                                                   </Group>
@@ -637,7 +637,7 @@
                                   <SubComponents>
                                     <Component class="javax.swing.JLabel" name="jLabel11">
                                       <Properties>
-                                        <Property name="text" type="java.lang.String" value="PNG File :"/>
+                                        <Property name="text" type="java.lang.String" value="PNG dir :"/>
                                       </Properties>
                                     </Component>
                                     <Component class="javax.swing.JTextField" name="jTextField11">
@@ -666,7 +666,7 @@
                                     </Component>
                                     <Component class="javax.swing.JLabel" name="jLabel3">
                                       <Properties>
-                                        <Property name="text" type="java.lang.String" value="&lt;html&gt;Select a directory with &quot;iconXX.png&quot; files.&lt;br&gt;Required PNG Format : 4BPP / 16 indexed colors.&lt;br&gt;Transparent color at index 0.&lt;br&gt;Base path can end with an optional filename prefix.&lt;/html&gt;"/>
+                                        <Property name="text" type="java.lang.String" value="&lt;html&gt;Select a directory with &quot;iconXXX.png&quot; files.&lt;br&gt;Required PNG Format : 4BPP / 16 indexed colors.&lt;br&gt;Transparent color at index 0.&lt;br&gt;Base path can end with an optional filename prefix.&lt;/html&gt;"/>
                                       </Properties>
                                     </Component>
                                   </SubComponents>
@@ -689,7 +689,7 @@
                                                   <Group type="102" alignment="0" attributes="0">
                                                       <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="jTextField12" pref="264" max="32767" attributes="0"/>
+                                                      <Component id="jTextField12" pref="268" max="32767" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="jButton19" min="-2" max="-2" attributes="0"/>
                                                   </Group>
@@ -725,7 +725,7 @@
                                   <SubComponents>
                                     <Component class="javax.swing.JLabel" name="jLabel12">
                                       <Properties>
-                                        <Property name="text" type="java.lang.String" value="GIF File :"/>
+                                        <Property name="text" type="java.lang.String" value="GIF dir :"/>
                                       </Properties>
                                     </Component>
                                     <Component class="javax.swing.JTextField" name="jTextField12">
@@ -746,7 +746,7 @@
                                     </Component>
                                     <Component class="javax.swing.JLabel" name="jLabel5">
                                       <Properties>
-                                        <Property name="text" type="java.lang.String" value="&lt;html&gt;Select a directory with &quot;iconXX.gif&quot; files.&lt;br&gt;Required GIF Format : 4BPP / 16 indexed colors.&lt;br&gt;Transparent color at index 0.&lt;br&gt;Base path can end with an optional filename prefix.&lt;/html&gt;"/>
+                                        <Property name="text" type="java.lang.String" value="&lt;html&gt;Select a directory with &quot;iconXXX.gif&quot; files.&lt;br&gt;Required GIF Format : 4BPP / 16 indexed colors.&lt;br&gt;Transparent color at index 0.&lt;br&gt;Base path can end with an optional filename prefix.&lt;/html&gt;"/>
                                       </Properties>
                                     </Component>
                                     <Component class="javax.swing.JButton" name="jButton16">
@@ -814,7 +814,7 @@
                                                   <Group type="102" attributes="0">
                                                       <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="jTextField13" pref="253" max="32767" attributes="0"/>
+                                                      <Component id="jTextField13" pref="255" max="32767" attributes="0"/>
                                                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                                                       <Component id="jButton20" min="-2" max="-2" attributes="0"/>
                                                   </Group>
@@ -841,7 +841,7 @@
                                                   <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                                               </Group>
-                                              <EmptySpace pref="54" max="32767" attributes="0"/>
+                                              <EmptySpace pref="45" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                     </DimensionLayout>
@@ -857,17 +857,17 @@
                                     </Component>
                                     <Component class="javax.swing.JLabel" name="jLabel1">
                                       <Properties>
-                                        <Property name="text" type="java.lang.String" value="&lt;html&gt;Select new target files. This export will create new files.&lt;/html&gt;"/>
+                                        <Property name="text" type="java.lang.String" value="&lt;html&gt;Select a target directory to create new &quot;iconXXX.bin&quot; files.&lt;br&gt;This export will create new files.&lt;/html&gt;"/>
                                       </Properties>
                                     </Component>
                                     <Component class="javax.swing.JLabel" name="jLabel14">
                                       <Properties>
-                                        <Property name="text" type="java.lang.String" value="Icons file :"/>
+                                        <Property name="text" type="java.lang.String" value="Icons dir :"/>
                                       </Properties>
                                     </Component>
                                     <Component class="javax.swing.JTextField" name="jTextField13">
                                       <Properties>
-                                        <Property name="text" type="java.lang.String" value=".\u005cicons.bin" containsInvalidXMLChars="true"/>
+                                        <Property name="text" type="java.lang.String" value=".\u005c" containsInvalidXMLChars="true"/>
                                       </Properties>
                                       <Events>
                                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField13ActionPerformed"/>
@@ -1015,7 +1015,7 @@
                                                   <Group type="102" alignment="0" attributes="0">
                                                       <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="jTextField15" pref="261" max="32767" attributes="0"/>
+                                                      <Component id="jTextField15" pref="265" max="32767" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="jButton27" min="-2" max="-2" attributes="0"/>
                                                   </Group>
@@ -1051,7 +1051,7 @@
                                   <SubComponents>
                                     <Component class="javax.swing.JLabel" name="jLabel15">
                                       <Properties>
-                                        <Property name="text" type="java.lang.String" value="PNG File :"/>
+                                        <Property name="text" type="java.lang.String" value="PNG dir :"/>
                                       </Properties>
                                     </Component>
                                     <Component class="javax.swing.JTextField" name="jTextField15">
@@ -1080,7 +1080,7 @@
                                     </Component>
                                     <Component class="javax.swing.JLabel" name="jLabel9">
                                       <Properties>
-                                        <Property name="text" type="java.lang.String" value="&lt;html&gt;Select a target directory to create new &quot;iconXX.png&quot; files.&lt;br&gt;Exported PNG Format : 4BPP / 16 indexed colors.&lt;br&gt;Transparent color at index 0.&lt;br&gt;Base path can end with an optional filename prefix.&lt;/html&gt;"/>
+                                        <Property name="text" type="java.lang.String" value="&lt;html&gt;Select a target directory to create new &quot;iconXXX.png&quot; files.&lt;br&gt;Exported PNG Format : 4BPP / 16 indexed colors.&lt;br&gt;Transparent color at index 0.&lt;br&gt;Base path can end with an optional filename prefix.&lt;/html&gt;"/>
                                       </Properties>
                                     </Component>
                                   </SubComponents>
@@ -1103,7 +1103,7 @@
                                                   <Group type="102" alignment="0" attributes="0">
                                                       <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="jTextField17" pref="264" max="32767" attributes="0"/>
+                                                      <Component id="jTextField17" pref="268" max="32767" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="jButton29" min="-2" max="-2" attributes="0"/>
                                                   </Group>
@@ -1139,7 +1139,7 @@
                                   <SubComponents>
                                     <Component class="javax.swing.JLabel" name="jLabel17">
                                       <Properties>
-                                        <Property name="text" type="java.lang.String" value="GIF File :"/>
+                                        <Property name="text" type="java.lang.String" value="GIF dir :"/>
                                       </Properties>
                                     </Component>
                                     <Component class="javax.swing.JTextField" name="jTextField17">
@@ -1160,7 +1160,7 @@
                                     </Component>
                                     <Component class="javax.swing.JLabel" name="jLabel13">
                                       <Properties>
-                                        <Property name="text" type="java.lang.String" value="&lt;html&gt;Select a target directory to create new &quot;iconXX.gif&quot; files.&lt;br&gt;Exported GIF Format : 4BPP / 16 indexed colors.&lt;br&gt;Transparent color at index 0.&lt;br&gt;Base path can end with an optional filename prefix.&lt;/html&gt;"/>
+                                        <Property name="text" type="java.lang.String" value="&lt;html&gt;Select a target directory to create new &quot;iconXXX.gif&quot; files.&lt;br&gt;Exported GIF Format : 4BPP / 16 indexed colors.&lt;br&gt;Transparent color at index 0.&lt;br&gt;Base path can end with an optional filename prefix.&lt;/html&gt;"/>
                                       </Properties>
                                     </Component>
                                     <Component class="javax.swing.JButton" name="jButton21">
